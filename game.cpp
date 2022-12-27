@@ -4,11 +4,18 @@ const float Game::PlayerSpeed = 100.f;
 const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
 
 Game::Game()
-: mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer()
+: mWindow(sf::VideoMode(640, 480), "SFML Application"), mTexture(), mPlayer()
 {
-    mPlayer.setRadius(40.f);
+    if (!mTexture.loadFromFile("Media/Textures/Eagle.png"))
+    {
+        // This is where I eventually handle any load errors.
+    }
+    mPlayer.setTexture(mTexture);
     mPlayer.setPosition(100.f, 100.f);
-    mPlayer.setFillColor(sf::Color::Cyan);
+    /* mPlayer.setRadius(40.f);
+     mPlayer.setPosition(100.f, 100.f);
+     mPlayer.setFillColor(sf::Color::Cyan);
+    */
 }
 
 void Game::run()

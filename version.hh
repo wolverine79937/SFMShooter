@@ -14,4 +14,4 @@
 *                      implemented most of said changes.
 */
 
-cVersion = "0.0.2a";
+string cVersion = "0.0.2a";

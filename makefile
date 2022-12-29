@@ -3,18 +3,16 @@ CXX=g++
 RM=rm -f
 CPPFLAGS=
 LDFLAGS=
-LDLIBC= -lsfml-graphics -lsfml-window -lsfml-system
+LDLIBC=-lsfml-graphics -lsfml-window -lsfml-system
 
 SRCS=game.cpp main.cpp
-OBJS=$(subs .cpp, .o,$(SRCS))
+OBJS=game.o main.o
+TARGET=shooter
 
-all: shooter
+all: $(TARGET)
 
-shooter: $(OBJS)
-	$(CXX) $(SRCS) -o shooter $(LDLIBC)
+$(TARGET): $(OBJS)
+	$(CXX) $(SRCS) -o $(TARGET) $(LDLIBC)
 
 clean:
-	$(RM) $(OBJS)
-
-distclean: clean
-	$(RM) shooter
+	$(RM) $(OBJS) $(TARGET)

@@ -9,6 +9,9 @@
 *  0.0.2 (12/28/2022): So, presjpolk is my mentor, my teacher and a good friend. As my
 *                      mentor, he suggested I add a makefile. Done. I also updated this
 *                      version file as well as updating the README.md file.
+*
+* 0.0.2a (12/29/2022): polk made some new suggestions to my makefile. I have
+*                      implemented most of said changes.
 */
 
-cVersion = "0.0.2";
+cVersion = "0.0.2a";

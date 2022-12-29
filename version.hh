@@ -5,6 +5,10 @@
 *
 *  0.0.1 (12/26/2022): Finally got rid of that ugly green circle and replaced it with a neat jet sprite. I really couldn't
 *                      tollerate that green circle much longer. LOL.
+*
+*  0.0.2 (12/28/2022): So, presjpolk is my mentor, my teacher and a good friend. As my
+*                      mentor, he suggested I add a makefile. Done. I also updated this
+*                      version file as well as updating the README.md file.
 */
 
-cVersion = "0.0.1";
+cVersion = "0.0.2";

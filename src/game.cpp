@@ -1,3 +1,4 @@
+#include "config.hh"
 #include "game.hh"
 
 const float Game::PlayerSpeed = 100.f;

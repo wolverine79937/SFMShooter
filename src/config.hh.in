@@ -14,4 +14,4 @@
 *                      implemented most of said changes.
 */
 
-string cVersion = "0.0.2a";
+#define VERSION "0.0.2a";
